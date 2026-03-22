@@ -1,0 +1,16 @@
+{
+  "name": "tiantian-fund-api",
+  "builds": [
+    {
+      "src": "api/**/*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "api/$1.js"
+    }
+  ],
+  "version": 2
+}
